@@ -1,0 +1,32 @@
+{
+  "name": "random-file",
+  "version": "1.0.0",
+  "description": "Selects a random file from a directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "random",
+    "file",
+    "select",
+    "directory"
+  ],
+  "author": "Jakob Fix <jakob.fix@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2017": "^6.22.0",
+    "mocha": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfix/npm-random-file.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jfix/npm-random-file/issues"
+  },
+  "homepage": "https://github.com/jfix/npm-random-file#readme",
+  "dependencies": {}
+}
