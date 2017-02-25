@@ -1,6 +1,8 @@
 random-file
 ===========
 
+[![Build Status](https://travis-ci.org/jfix/npm-random-file.svg?branch=master)](https://travis-ci.org/jfix/npm-random-file)
+
 Select a random file from a provided directory:
 
 ```
