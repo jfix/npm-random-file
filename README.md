@@ -6,10 +6,10 @@ select-random-file
 Select a random file from a provided directory:
 
 ```
-const rf = require('random-file')
+const randomFile = require('random-file')
 
 const dir = '/tmp/whatever'
-rf.randomFile(dir, (err, file) => {
+randomFile(dir, (err, file) => {
   console.log(`The random file is: ${file}.`)
 })
 ```
