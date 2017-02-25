@@ -1,7 +1,7 @@
 const path = require('path')
 const fs = require('fs')
 
-exports.randomFile = function (dir, callback) {
+module.exports = function (dir, callback) {
   fs.readdir(dir, (err, files) => {
     if (err) return callback(err)
 
