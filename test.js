@@ -4,7 +4,7 @@ const async = require('async')
 const assert = require('chai').assert
 const path = require('path')
 
-const rf = require('./index.js')
+const randomFile = require('./index.js')
 
 const baseDir = '/tmp/test-dir'
 
@@ -15,7 +15,7 @@ describe('randomFile', function () {
     const testDir = path.join(baseDir, 'i-dont-exist')
     assert.throws(
       () => {
-        rf.randomFile(testDir, done)
+        randomFile(testDir, done)
         done()
       },
       /ENOENT: no such file or directory/,
@@ -26,7 +26,7 @@ describe('randomFile', function () {
   it('should return undefined if no files in directory', function (done) {
     fs.mkdtemp(baseDir, (err, d) => {
       if (err) done(err)
-      rf.randomFile(d, (err, file) => {
+      randomFile(d, (err, file) => {
         if (err) return done(err)
         assert.equal(undefined, file)
         rimraf(d, () => done())
@@ -42,7 +42,7 @@ describe('randomFile', function () {
       fs.writeFile(path.join(d, fn), (err, f) => {
         if (err) return done(err)
 
-        rf.randomFile(d, (err, file) => {
+        randomFile(d, (err, file) => {
           if (err) return done(err)
 
           assert.equal(fn, file)
@@ -63,7 +63,7 @@ describe('randomFile', function () {
         })
       })
 
-      rf.randomFile(d, (err, file) => {
+      randomFile(d, (err, file) => {
         if (err) return done(err)
         assert.include(files, file)
         rimraf(d, () => done())

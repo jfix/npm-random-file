@@ -18,3 +18,8 @@ There are a couple of things that could be added:
 
 * filter files by an extension
 * recursively traverse a deeper directory structure
+
+Acknowledgements
+----------------
+
+Discussion on Stack Overflow was very useful: http://stackoverflow.com/questions/42425887/how-to-use-an-async-function-as-compare-function-of-array-filter
