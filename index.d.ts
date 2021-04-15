@@ -1,0 +1,1 @@
+export default function(dir: string, callback: (err: NodeJS.ErrnoException | null, file?: string) => void): void
