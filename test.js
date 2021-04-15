@@ -39,7 +39,7 @@ describe('randomFile', function () {
     fs.mkdtemp(baseDir, (err, d) => {
       if (err) return done(err)
 
-      fs.writeFile(path.join(d, fn), (err, f) => {
+      fs.writeFile(path.join(d, fn), 'test string', (err, f) => {
         if (err) return done(err)
 
         randomFile(d, (err, file) => {
@@ -58,7 +58,7 @@ describe('randomFile', function () {
       if (err) return done(err)
 
       async.each(files, function (file, done) {
-        fs.writeFile(path.join(d, file), (err, f) => {
+        fs.writeFile(path.join(d, file), 'test string', (err, f) => {
           if (err) return done(err)
         })
       })
