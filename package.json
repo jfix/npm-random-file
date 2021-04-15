@@ -1,6 +1,6 @@
 {
   "name": "select-random-file",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Selects a random file from a directory",
   "main": "index.js",
   "types": "index.d.ts",
