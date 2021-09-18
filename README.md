@@ -1,7 +1,7 @@
 select-random-file
 ==================
 
-![Build status](https://github.com/github/jfix/npm-random-file/workflows/test.yml/badge.svg)
+![Build status](https://github.com/jfix/npm-random-file/actions/workflows/test.yml/badge.svg)
 
 Select a random file from a provided directory:
 
